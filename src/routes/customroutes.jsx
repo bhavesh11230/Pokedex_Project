@@ -5,8 +5,9 @@ function CustomRoutes(){
     return(
         <Routes>
             <Route path="/" element={<Pokedex />} />
-            <Route path="/pokemon/:id" element={<PokemonDetails />} /> // here id means the id of the pokemon i.e. it url will be /pokemon/1 for first pokemon
+            <Route path="/pokemon/:id" element={<PokemonDetails />} /> 
         </Routes>
     )
+    // here id means the id of the pokemon i.e. it url will be /pokemon/1 for first pokemon
 }
 export default CustomRoutes;
