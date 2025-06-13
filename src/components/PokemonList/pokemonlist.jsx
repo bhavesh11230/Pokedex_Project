@@ -28,7 +28,7 @@ function PokemonList() {
                 return; // Exit the function if data is invalid
             }
 
-            setPokemonListState(prevState => ({
+            setPokemonListState(prevState => ({   // Update state with next and previous URLs
                 ...prevState,
                 nextUrl: response.data.next,
                 prevUrl: response.data.previous
